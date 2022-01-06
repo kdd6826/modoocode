@@ -30,6 +30,9 @@
     <ClCompile Include="4-1.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
