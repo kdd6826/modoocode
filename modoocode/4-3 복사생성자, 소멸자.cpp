@@ -285,35 +285,93 @@
 //	simple_function();
 //}
 
+//class Photon_Cannon {
+//	int hp, shield;
+//	int coord_x, coord_y;
+//	int damage;
+//public:
+//	Photon_Cannon(int x, int y);
+//	Photon_Cannon(const Photon_Cannon& pc);
+//
+//	void show_status();
+//};
+//
+//Photon_Cannon::Photon_Cannon(int x, int y)
+//{
+//	std::cout << "생성자 호출 !" << std::endl;
+//	hp = shield = 100;
+//	coord_x = x;
+//	coord_y = y;
+//	damage = 20;
+//}
+//
+//Photon_Cannon::Photon_Cannon(const Photon_Cannon& pc)
+//{
+//	//T(const T& a);
+//	std::cout << "복사 생성자 호출 !" << std::endl;
+//	hp = pc.hp;
+//	shield = pc.shield;
+//	coord_x = pc.coord_x;
+//	coord_y = pc.coord_y;
+//	damage = 20;
+//}
+//
+//void Photon_Cannon::show_status()
+//{
+//	std::cout << "Photon Cannon " << std::endl;
+//	std::cout << " Location : ( " << coord_x << " , " << coord_y << " ) " << std::endl;
+//	std::cout << " HP : " << hp << std::endl;
+//}
+//
+//int main() {
+//	Photon_Cannon pc1(3, 3);
+//	Photon_Cannon pc2(pc1);
+//	Photon_Cannon pc3 = pc2;
+//
+//	
+//	pc1.show_status();
+//	pc2.show_status();
+//}
+
+
 class Photon_Cannon {
 	int hp, shield;
 	int coord_x, coord_y;
 	int damage;
+
+	char *name;
 public:
 	Photon_Cannon(int x, int y);
-	Photon_Cannon(const Photon_Cannon& pc);
+	Photon_Cannon(int x, int y ,const char *cannon_name);
+	~Photon_Cannon();
 
 	void show_status();
 };
 
 Photon_Cannon::Photon_Cannon(int x, int y)
 {
-	std::cout << "생성자 호출 !" << std::endl;
 	hp = shield = 100;
 	coord_x = x;
 	coord_y = y;
 	damage = 20;
 }
 
-Photon_Cannon::Photon_Cannon(const Photon_Cannon& pc)
+Photon_Cannon::Photon_Cannon(int x, int y, const char* cannon_name)
 {
-	//T(const T& a);
-	std::cout << "복사 생성자 호출 !" << std::endl;
-	hp = pc.hp;
-	shield = pc.shield;
-	coord_x = pc.coord_x;
-	coord_y = pc.coord_y;
+	hp = shield = 100;
+	coord_x = x;
+	coord_y = y;
 	damage = 20;
+
+	name = new char[strlen(cannon_name) + 1];
+	strcpy_s(name, strlen(cannon_name) + 1, cannon_name);
+}
+
+
+
+Photon_Cannon::~Photon_Cannon()
+{
+	if (name) delete[] name;
 }
 
 void Photon_Cannon::show_status()
@@ -325,10 +383,10 @@ void Photon_Cannon::show_status()
 
 int main() {
 	Photon_Cannon pc1(3, 3);
-	Photon_Cannon pc2(pc1);
-	Photon_Cannon pc3 = pc2;
-
+	Photon_Cannon pc2 = pc1;
 	
+
+
 	pc1.show_status();
 	pc2.show_status();
 }
