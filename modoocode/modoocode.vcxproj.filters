@@ -36,6 +36,9 @@
     <ClCompile Include="4-2 오버로딩, 생성자.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="4-3 복사생성자, 소멸자.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
