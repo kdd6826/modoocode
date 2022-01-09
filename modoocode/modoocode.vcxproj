@@ -157,7 +157,11 @@
     <ClCompile Include="4-2 오버로딩, 생성자.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="4-3 복사생성자, 소멸자.cpp" />
+    <ClCompile Include="4-3 복사생성자, 소멸자.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="4-4 const, static.cpp" />
+    <ClCompile Include="4-5 string.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h" />
