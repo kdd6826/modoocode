@@ -61,7 +61,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="1. 시스템 프로그래밍의 이해와 접근 컴퓨터 하드웨어의 구성 CPU에 대한 이해">
+    <None Include="SystemPrograming\1-2. 프로그램의 실행과정 하드웨어 구성의 재접근">
+      <Filter>System Programing</Filter>
+    </None>
+    <None Include="SystemPrograming\1-1. 시스템 프로그래밍의 이해와 접근 컴퓨터 하드웨어의 구성 CPU에 대한 이해">
+      <Filter>System Programing</Filter>
+    </None>
+    <None Include="SystemPrograming\2-1. UNICODE">
       <Filter>System Programing</Filter>
     </None>
   </ItemGroup>
