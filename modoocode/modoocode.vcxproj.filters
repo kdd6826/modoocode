@@ -9,41 +9,47 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="리소스 파일">
+    <Filter Include="헤더 파일\1-2">
+      <UniqueIdentifier>{a09aeb09-876f-4fee-af22-3425b0e201f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modoocode">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="헤더 파일\1-2">
-      <UniqueIdentifier>{a09aeb09-876f-4fee-af22-3425b0e201f0}</UniqueIdentifier>
+    <Filter Include="System Programing">
+      <UniqueIdentifier>{692708e3-a1c0-4cd0-aa87-82ec979191ff}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1-2 c++.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="1-3 c와 공통점.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="2 참조자%28레퍼런스%29.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="4-1 객체.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="3 new와 delete.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="4-2 오버로딩, 생성자.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="4-3 복사생성자, 소멸자.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="4-4 const, static.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
     </ClCompile>
     <ClCompile Include="4-5 string.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>modoocode</Filter>
+    </ClCompile>
+    <ClCompile Include="4-6 explicit , mutable.cpp">
+      <Filter>modoocode</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,5 +59,10 @@
     <ClInclude Include="header2.h">
       <Filter>헤더 파일\1-2</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1. 시스템 프로그래밍의 이해와 접근 컴퓨터 하드웨어의 구성 CPU에 대한 이해">
+      <Filter>System Programing</Filter>
+    </None>
   </ItemGroup>
 </Project>
