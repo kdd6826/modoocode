@@ -167,7 +167,10 @@
     <ClCompile Include="4-5 string.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="4-6 explicit , mutable.cpp" />
+    <ClCompile Include="4-6 explicit , mutable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="5-1 연산자 오버로딩.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h" />

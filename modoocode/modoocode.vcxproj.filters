@@ -51,6 +51,9 @@
     <ClCompile Include="4-6 explicit , mutable.cpp">
       <Filter>modoocode</Filter>
     </ClCompile>
+    <ClCompile Include="5-1 연산자 오버로딩.cpp">
+      <Filter>modoocode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
