@@ -164,6 +164,8 @@ public:
 	Complex operator*(const Complex& c) const;
 	Complex operator/(const Complex& c) const;
 
+	Complex operator+(const char* str);
+
 	void printIn() { std::cout << "( " << real << " , " << img << " ) " << std::endl; }
 };
 
@@ -202,4 +204,33 @@ int main() {
 	Complex c = a * b;
 
 	c.printIn();
+}
+
+// 복소수 : 허수부와 실수부로 이루어진 수..?
+
+
+
+Complex Complex::operator+(const char* str) {
+	int begin = 0, end = strlen(str);
+	double str_img = 0.0, str_real = 0.0;
+
+	int pos_i = -1;
+	for (int i = 0; i != end; i++) {
+		if (str[i] == 'i') {
+			pos_i = i;
+			break;
+		}
+	}
+
+	if (pos_i == -1) {
+		str_real = get_number(str, begin, end - 1);
+
+		Complex temp(str_real, str_img);
+		return(*this) + temp;
+	}
+
+	str_real = get_number(str, begin, pos_i - 1);
+	str_img = get_number(str, pos_i + 1, end - 1);
+
+	if(pos_i>= 1&&str[pos_i-1]=='-')
 }
