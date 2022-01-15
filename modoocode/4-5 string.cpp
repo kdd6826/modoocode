@@ -16,7 +16,7 @@
 //	MyString& assign(const MyString& str);
 //	MyString& assign(const char* str);
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //};
 //
 //MyString::MyString(char c)
@@ -83,7 +83,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
@@ -96,8 +96,8 @@
 //	MyString str1("hello world!");
 //	MyString str2(str1);
 //
-//	str1.printIn();
-//	str1.printIn();
+//	str1.println();
+//	str1.println();
 //}
 
 
@@ -118,7 +118,7 @@
 //	MyString& assign(const MyString& str);
 //	MyString& assign(const char* str);
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //
 //	int capacity() { return memory_capacity; }
 //	void reserve(int size);
@@ -190,7 +190,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
@@ -217,8 +217,8 @@
 //	MyString str1("hello world!");
 //	MyString str2(str1);
 //
-//	str1.printIn();
-//	str1.printIn();
+//	str1.println();
+//	str1.println();
 //}
 //
 //class MyString {
@@ -240,7 +240,7 @@
 //	void reserve(int size);
 //
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //
 //	MyString& assign(const char* str);
 //	MyString& assign(const MyString& str);
@@ -327,7 +327,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
@@ -356,7 +356,7 @@
 //
 //	std::cout << "Capacity : " << str1.capacity() << std::endl;
 //	std::cout << "String length : " << str1.length() << std::endl;
-//	str1.printIn();
+//	str1.println();
 //}
 
 
@@ -379,7 +379,7 @@
 //	void reserve(int size);
 //
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //
 //	MyString& assign(const char* str);
 //	MyString& assign(const MyString& str);
@@ -467,7 +467,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
@@ -496,7 +496,7 @@
 //
 //	std::cout << "Capacity : " << str1.capacity() << std::endl;
 //	std::cout << "String length : " << str1.length() << std::endl;
-//	str1.printIn();
+//	str1.println();
 //}
 
 
@@ -519,7 +519,7 @@
 //	void reserve(int size);
 //
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //
 //	MyString& assign(const char* str);
 //	MyString& assign(const MyString& str);
@@ -663,7 +663,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
@@ -693,10 +693,10 @@
 //
 //	std::cout << "Capacity : " << str1.capacity() << std::endl;
 //	std::cout << "String length : " << str1.length() << std::endl;
-//	str1.printIn();
+//	str1.println();
 //
 //	str1.insert(5, str2);
-//	str1.printIn();
+//	str1.println();
 //}
 
 //class MyString {
@@ -718,7 +718,7 @@
 //		void reserve(int size);
 //	
 //		void print() const;
-//		void printIn() const;
+//		void println() const;
 //	
 //		MyString& assign(const char* str);
 //		MyString& assign(const MyString& str);
@@ -868,7 +868,7 @@
 //		}
 //	}
 //	
-//	void MyString::printIn() const
+//	void MyString::println() const
 //	{
 //		for (int i = 0; i != string_length; i++)
 //		{
@@ -898,16 +898,16 @@
 //	
 //		std::cout << "Capacity : " << str1.capacity() << std::endl;
 //		std::cout << "String length : " << str1.length() << std::endl;
-//		str1.printIn();
+//		str1.println();
 //	
 //		str1.insert(5, str2);
-//		str1.printIn();
+//		str1.println();
 //
 //
 //		std::cout << "Capacity : " << str1.capacity() << std::endl;
 //		std::cout << "String length : " << str1.length() << std::endl;
 //
-//		str1.printIn();
+//		str1.println();
 //
 //	}
 
@@ -930,7 +930,7 @@
 //	void reserve(int size);
 //
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //
 //	MyString& assign(const char* str);
 //	MyString& assign(const MyString& str);
@@ -1094,7 +1094,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
@@ -1124,10 +1124,10 @@
 //
 //	std::cout << "Capacity : " << str1.capacity() << std::endl;
 //	std::cout << "String length : " << str1.length() << std::endl;
-//	str1.printIn();
+//	str1.println();
 //
 //	str1.erase(2, 5);
-//	str1.printIn();
+//	str1.println();
 //
 //	std::cout << "Capacity : " << str1.capacity() << std::endl;
 //	std::cout << "String length : " << str1.length() << std::endl;
@@ -1153,7 +1153,7 @@
 //	void reserve(int size);
 //
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //
 //	MyString& assign(const char* str);
 //	MyString& assign(const MyString& str);
@@ -1347,7 +1347,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
@@ -1398,7 +1398,7 @@
 //	void reserve(int size);
 //
 //	void print() const;
-//	void printIn() const;
+//	void println() const;
 //
 //	MyString& assign(const char* str);
 //	MyString& assign(const MyString& str);
@@ -1615,7 +1615,7 @@
 //	}
 //}
 //
-//void MyString::printIn() const
+//void MyString::println() const
 //{
 //	for (int i = 0; i != string_length; i++)
 //	{
