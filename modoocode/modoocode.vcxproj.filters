@@ -60,6 +60,9 @@
     <ClCompile Include="5-3 연산자 오버로딩.cpp">
       <Filter>modoocode</Filter>
     </ClCompile>
+    <ClCompile Include="6-1. 표준 문자열, 상속.cpp">
+      <Filter>modoocode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">

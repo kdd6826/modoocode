@@ -173,8 +173,13 @@
     <ClCompile Include="5-1 연산자 오버로딩.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="5-2 입출력, 첨자, 타입변환, 증감 연산자 오버로딩.cpp" />
-    <ClCompile Include="5-3 연산자 오버로딩.cpp" />
+    <ClCompile Include="5-2 입출력, 첨자, 타입변환, 증감 연산자 오버로딩.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="5-3 연산자 오버로딩.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="6-1. 표준 문자열, 상속.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h" />
