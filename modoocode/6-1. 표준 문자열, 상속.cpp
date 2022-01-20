@@ -55,9 +55,12 @@ public:
 
 class EmployeeList {
 	int alloc_employee;
-	int current_employee;
-	Employee** employee_list;
 
+	int current_employee;
+	int current_manager;
+
+	Employee** employee_list;
+	Manager** manager_list;
 public:
 	EmployeeList(int alloc_employee) :alloc_employee(alloc_employee) {
 		employee_list = new Employee * [alloc_employee];
@@ -100,5 +103,36 @@ int main() {
 }
 
 class Manager {
+	std::string name;
+	int age;
 
+	std::string position;
+	int rank;
+	int year_of_service;
+
+public:
+	Manager(std::string name, int age, std::string position, int rank,
+		int year_of_service)
+		: year_of_service(year_of_service),
+		name(name),
+		age(age),
+		position(position),
+		rank(rank) {}
+
+	Manager(const Manager& manager) {
+		name = manager.name;
+		age = manager.age;
+		position = manager.position;
+		rank = manager.rank;
+		year_of_service = manager.year_of_service;
+	}
+
+	Manager() {}
+
+	int calcuate_pay() { return 200 + rank * 50 + 5 * year_of_service; }
+	void print_info() {
+		std::cout << name << " (" << position << " , " << age << ", "
+			<< year_of_service << "년차) ==> " << calcuate_pay() << "만원"
+			<< std::endl;
+	}
 };
