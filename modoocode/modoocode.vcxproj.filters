@@ -69,6 +69,9 @@
     <ClCompile Include="6-3 가상함수와 상속에 관련한 잡다한 내용.cpp">
       <Filter>modoocode</Filter>
     </ClCompile>
+    <ClCompile Include="7-1 입출력.cpp">
+      <Filter>modoocode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
